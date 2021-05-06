@@ -53,19 +53,19 @@ st.markdown("""
 
 #if dataset_name == 'Closing Price Analysis':
 if st.sidebar.button('Closing Price Analysis'):
-    js = "window.open('volatility_index.py')"  # New tab or window
+    js = "window.open('https://closing-price-analysis.herokuapp.com/')"  # New tab or window
     html = '<img src onerror="{}">'.format(js)
     div = Div(text=html)
     st.bokeh_chart(div)
 
 if st.sidebar.button('Higher High & Lower Low Pattern'):
-    js = "window.open('http://100.24.8.241:8501/')"  # New tab or window
+    js = "window.open('https://higher-high-lower-low.herokuapp.com/')"  # New tab or window
     html = '<img src onerror="{}">'.format(js)
     div = Div(text=html)
     st.bokeh_chart(div)
 
 if st.sidebar.button('Volatality Index'):
-    js = "window.open('http://52.207.208.61:8501/')"  # New tab or window
+    js = "window.open('https://stock-volatility.herokuapp.com/')"  # New tab or window
     html = '<img src onerror="{}">'.format(js)
     div = Div(text=html)
     st.bokeh_chart(div)
