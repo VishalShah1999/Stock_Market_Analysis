@@ -84,45 +84,45 @@ st.markdown(
 )
 
 def get_model(name):
-    repo = 'Testing'
+    repo = 'Stock_Market_Analysis'
     if name == 'Apple':
         ticker_symbol = 'AAPL'
-        url = "https://github.com/darshi24/" + repo + "/blob/main/" + ticker_symbol + ".p?raw=true"
+        url = "https://github.com/VishalShah1999/" + repo + "/blob/main/" + ticker_symbol + ".p?raw=true"
         byte_content = requests.get(url).content
         model = io.BytesIO(byte_content)
         reg = pickle.load(model)
         return ticker_symbol, reg
     elif name == 'Google':
         ticker_symbol = 'GOOG'
-        url = "https://github.com/darshi24/" + repo + "/blob/main/" + ticker_symbol + ".p?raw=true"
+        url = "https://github.com/VishalShah1999/" + repo + "/blob/main/" + ticker_symbol + ".p?raw=true"
         byte_content = requests.get(url).content
         model = io.BytesIO(byte_content)
         reg = pickle.load(model)
         return ticker_symbol, reg
     elif name == 'Microsoft':
         ticker_symbol = 'MSFT'
-        url = "https://github.com/darshi24/" + repo + "/blob/main/" + ticker_symbol + ".p?raw=true"
+        url = "https://github.com/VishalShah1999/" + repo + "/blob/main/" + ticker_symbol + ".p?raw=true"
         byte_content = requests.get(url).content
         model = io.BytesIO(byte_content)
         reg = pickle.load(model)
         return ticker_symbol, reg
     elif name == 'Tesla':
         ticker_symbol = "TSLA"
-        url = "https://github.com/darshi24/" + repo + "/blob/main/" + ticker_symbol + ".p?raw=true"
+        url = "https://github.com/VishalShah1999/" + repo + "/blob/main/" + ticker_symbol + ".p?raw=true"
         byte_content = requests.get(url).content
         model = io.BytesIO(byte_content)
         reg = pickle.load(model)
         return ticker_symbol, reg
     elif name == 'IBM':
         ticker_symbol = "IBM"
-        url = "https://github.com/darshi24/" + repo + "/blob/main/" + ticker_symbol + ".p?raw=true"
+        url = "https://github.com/VishalShah1999/" + repo + "/blob/main/" + ticker_symbol + ".p?raw=true"
         byte_content = requests.get(url).content
         model = io.BytesIO(byte_content)
         reg = pickle.load(model)
         return ticker_symbol, reg
     elif name == 'Accenture':
         ticker_symbol = "ACN"
-        url = "https://github.com/darshi24/" + repo + "/blob/main/" + ticker_symbol + ".p?raw=true"
+        url = "https://github.com/VishalShah1999/" + repo + "/blob/main/" + ticker_symbol + ".p?raw=true"
         byte_content = requests.get(url).content
         model = io.BytesIO(byte_content)
         reg = pickle.load(model)
